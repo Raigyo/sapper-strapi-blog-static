@@ -15,6 +15,5 @@
 
 <p>
   this minimal blog is built with <a href="https://svelte.dev/">svelte</a> and
-  <a href="https://strapi.io/">strapi</a> images by
-  <a href="https://unsplash.com/@glencarrie">glen carrie</a> from unsplash
+  <a href="https://strapi.io/">strapi</a>
 </p>

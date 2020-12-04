@@ -8,6 +8,14 @@ December 2020
 
 * * *
 
+Backend on Heroku: [https://raigyo-sapper-strapi-watch.herokuapp.com/](https://raigyo-sapper-strapi-watch.herokuapp.com/)
+
+![capture](_readme-img/capture-back.png)
+
+![capture](_readme-img/capture-graphql.png)
+
+![capture](_readme-img/capture-front.png)
+
 **Svelte** is a radical new approach to building user interfaces. Whereas traditional frameworks
 like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile
 step that happens when you build your app.
@@ -65,7 +73,7 @@ yarn create strapi-app backend --quickstart
 
 cd backend
 
-# we can use JSON but also GraphQL
+# We can use JSON but also GraphQL
 
 yarn strapi install graphql
 ````
@@ -76,6 +84,9 @@ yarn strapi install graphql
 
 Note about Roles and permissions: moved into the Settings menu.
 
+In /admin/settings/users-permissions/roles then to "Public" role and in the "Application" permission
+section check count, findone and find, it will cover needs of an API for frontend app.
+
 ## Piecing Together Both Ends
 
 Because we are using the Strapi GraphQL, we will have to install the Svelte Apollo client and a few other packages to make sure everything works properly.
@@ -85,6 +96,24 @@ In *front end* part:
 ````bash
 npm i --save apollo-boost graphql svelte-apollo moment
 ````
+
+## Export a static version of the application
+
+````bash
+npm run export
+````
+## Heroku and GraphQL
+
+ Create settings.json file in above path ./extensions/graphql/config/settings.json
+
+{
+  "endpoint": "/graphql",
+  "tracing": false,
+  "shadowCRUD": true,
+  "playgroundAlways": true,
+  "depthLimit": 7,
+  "amountLimit": 100
+}
 
 ## Useful links
 

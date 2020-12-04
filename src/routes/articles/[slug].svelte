@@ -5,6 +5,7 @@
 -->
 <script context="module">
   import ApolloClient, { gql } from 'apollo-boost';
+  import ApolloClient, { gql } from 'apollo-client'; // Use it for heroku
   import moment from 'moment';
 
   const blogQuery = gql`
@@ -25,7 +26,7 @@
   export async function preload({params, query}) {
           const client = new ApolloClient({
                   // uri: '<Your Strapi GraphQL Endpoint>',
-                  uri: 'http://localhost:1337/graphql',
+                  uri: 'https://raigyo-sapper-strapi-watch.herokuapp.com/graphql',
                   fetch: this.fetch
                    });
           const results = await client.query({
