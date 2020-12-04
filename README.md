@@ -8,6 +8,8 @@ December 2020
 
 * * *
 
+For back end part see: [https://github.com/Raigyo/sapper-strapi-blog-backend](https://github.com/Raigyo/sapper-strapi-blog-backend)
+
 Front End on [Netlify](https://friendly-beaver-b2c0b1.netlify.app/)
 
 Backend on [Heroku](https://raigyo-sapper-strapi-watch.herokuapp.com/)
@@ -70,37 +72,7 @@ npm run dev
 
 ## Strapi Back End
 
-````bash
-yarn create strapi-app backend --quickstart
-
-cd backend
-
-# We can use JSON but also GraphQL
-
-yarn strapi install graphql
-````
-
-- [Strapi Admin](http://localhost:1337/admin)
-- [GraphQL playground](http://localhost:1337/graphql)
-- [JSON data](http://localhost:1337/Blogs) - use name of the collection
-
-Note about Roles and permissions: moved into the Settings menu.
-
-In /admin/settings/users-permissions/roles then to "Public" role and in the "Application" permission
-section check count, findone and find, it will cover needs of an API for frontend app.
-
-### Heroku and GraphQL
-
- Create settings.json file in above path ./extensions/graphql/config/settings.json
-
-{
-  "endpoint": "/graphql",
-  "tracing": false,
-  "shadowCRUD": true,
-  "playgroundAlways": true,
-  "depthLimit": 7,
-  "amountLimit": 100
-}
+See: [https://github.com/Raigyo/sapper-strapi-blog-backend](https://github.com/Raigyo/sapper-strapi-blog-backend)
 
 ## Piecing Together Both Ends
 
@@ -117,7 +89,6 @@ npm i --save apollo-boost graphql svelte-apollo moment
 ````bash
 npm run export
 ````
-
 
 ## Useful links
 
