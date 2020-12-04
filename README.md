@@ -8,7 +8,9 @@ December 2020
 
 * * *
 
-Backend on Heroku: [https://raigyo-sapper-strapi-watch.herokuapp.com/](https://raigyo-sapper-strapi-watch.herokuapp.com/)
+Front End on [Netlify](https://friendly-beaver-b2c0b1.netlify.app/)
+
+Backend on [Heroku](https://raigyo-sapper-strapi-watch.herokuapp.com/)
 
 ![capture](_readme-img/capture-back.png)
 

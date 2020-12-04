@@ -5,7 +5,6 @@
 -->
 <script context="module">
   import ApolloClient, { gql } from 'apollo-boost';
-  import ApolloClient, { gql } from 'apollo-client'; // Use it for heroku
   import moment from 'moment';
 
   const blogQuery = gql`

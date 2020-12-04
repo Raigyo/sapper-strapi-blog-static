@@ -1,8 +1,7 @@
 <!-- This file represents our /articles route. -->
 
 <script context="module">
-  // import ApolloClient, { gql } from 'apollo-boost'; // Apollo Client to make a query: blogQuery.
-  import ApolloClient, { gql } from 'apollo-client'; // Use it for heroku
+  import ApolloClient, { gql } from 'apollo-boost'; // Apollo Client to make a query: blogQuery.
   import moment from 'moment';
 
   const blogQuery = gql`
