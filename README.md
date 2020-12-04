@@ -89,22 +89,7 @@ Note about Roles and permissions: moved into the Settings menu.
 In /admin/settings/users-permissions/roles then to "Public" role and in the "Application" permission
 section check count, findone and find, it will cover needs of an API for frontend app.
 
-## Piecing Together Both Ends
-
-Because we are using the Strapi GraphQL, we will have to install the Svelte Apollo client and a few other packages to make sure everything works properly.
-
-In *front end* part:
-
-````bash
-npm i --save apollo-boost graphql svelte-apollo moment
-````
-
-## Export a static version of the application
-
-````bash
-npm run export
-````
-## Heroku and GraphQL
+### Heroku and GraphQL
 
  Create settings.json file in above path ./extensions/graphql/config/settings.json
 
@@ -116,6 +101,23 @@ npm run export
   "depthLimit": 7,
   "amountLimit": 100
 }
+
+## Piecing Together Both Ends
+
+Because we are using the Strapi GraphQL, we will have to install the Svelte Apollo client and a few other packages to make sure everything works properly.
+
+In *front end* part:
+
+````bash
+npm i --save apollo-boost graphql svelte-apollo moment
+````
+
+## Export a static version of the Front application
+
+````bash
+npm run export
+````
+
 
 ## Useful links
 
